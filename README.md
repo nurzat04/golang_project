@@ -64,7 +64,7 @@ Start each microservice individually:
 
 - **Shorten Service**: `go run shorten-service/main.go`
 - **Redirect Service**: `go run redirect-service/main.go`
-- **Stats Service**: `go run stats-service/main.go` (Optional)
+- **Stats Service**: `go run stats-service/main.go`
 
 ## Usage Example
 
