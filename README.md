@@ -10,7 +10,7 @@ A simple short URL service similar to Bit.ly or TinyURL. This service allows you
 ### 2. URL Redirection
 - When a user accesses the short URL, the system automatically redirects the user to the original long URL.
 
-### 3. Click Tracking (Optional)
+### 3. Click Tracking
 - The system records how many times the short URL has been clicked, as well as the user's IP address and other statistical information.
 
 ## Microservices Architecture
@@ -27,7 +27,7 @@ Handles user visits to short URLs by looking up the original long URL and perfor
 
 - Provides a RESTful API: `GET /:shortLink` where users access the short link and are redirected to the original URL.
 
-### 3. **Stats Service (Optional)**
+### 3. **Stats Service**
 Records click statistics such as the number of clicks and user IP addresses.
 
 - Provides a RESTful API: `GET /stats/:shortLink` to query the click statistics for a specific short link.
@@ -92,7 +92,7 @@ When accessing the short URL, the system will redirect to the original long URL:
 curl -L http://localhost:8080/abc123
 ```
 
-### 3. View Click Stats (Optional)
+### 3. View Click Stats
 
 ```bash
 curl http://localhost:8080/stats/abc123
